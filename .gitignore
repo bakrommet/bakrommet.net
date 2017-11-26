@@ -1,0 +1,15 @@
+auth0.properties
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.idea
+*.iws
+*.iml
+*.ipr
+.DS_store
