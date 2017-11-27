@@ -10,7 +10,7 @@ import org.springframework.context.annotation.PropertySources;
 @EnableAutoConfiguration
 @PropertySources({
 		@PropertySource("classpath:application.properties"),
-		@PropertySource("classpath:auth0.properties")
+		@PropertySource(value = "classpath:auth0.properties", ignoreResourceNotFound = true)
 })
 public class BakrommetApplication {
 
