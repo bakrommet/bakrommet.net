@@ -4,14 +4,14 @@ VM 2018 nærmer seg. Hvem er den beste VM-tipperen?
 
 ## Kom i gang med utvikling
 
-* Sett opp `auth0.properties`. Se `sample`-filen for nødvendig info.
+* Sett opp `auth0.properties`. Se `sample`-filen for nødvendig info (hentes fra auth0.com).
 * Start appen med `./mvnw spring-boot:run` eller via IntelliJ
 * Applikasjonen starter på [localhost:8080](http://localhost:8080)
 
 ### Heroku
 
-* Installer [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) følg trinnene under Getting Started
-* Sett opp appen med `heroku git:remote -a bakrommet`
+* Installer [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) og følg trinnene under Getting Started
+* Klargjør for deploy med `heroku git:remote -a bakrommet`
 * Deploy til Heroku med `git push heroku master`
 
 ## Teknologien
