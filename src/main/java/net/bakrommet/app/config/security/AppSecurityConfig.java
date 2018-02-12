@@ -48,9 +48,9 @@ public class AppSecurityConfig extends WebSecurityConfigurerAdapter {
 
         http.authorizeRequests()
                 .antMatchers(HttpMethod.GET, "/", "/callback", "/login").permitAll()
-                .antMatchers(HttpMethod.GET, "/favicon.ico").permitAll()
-                .antMatchers("/admin/**").hasAuthority("admin") //TODO hasRole(...)
-                .antMatchers("/**").authenticated()
+                .antMatchers(HttpMethod.GET, "/favicon.ico", "/public/**").permitAll()
+                .antMatchers("/admin/**").permitAll()//.hasAuthority("admin") //TODO hasRole(...)
+                .antMatchers("/**").permitAll()
                 .and()
                 .logout().permitAll();
 
