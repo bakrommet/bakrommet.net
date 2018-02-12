@@ -18,11 +18,10 @@ public class AdminController {
     @RequestMapping(value = "/admin/home", method = RequestMethod.GET)
     protected String home(final Map<String, Object> model, final Principal principal) {
         logger.info("Admin page");
-        if (principal == null) {
-            return "redirect:/logout";
-        }
-
-        model.put("userId", principal.getName());
-        return "admin";
+//        if (principal == null) {
+//            return "redirect:/logout";
+//        }
+        model.put("userId", "John");//principal.getName());
+        return "admin_home";
     }
 }
