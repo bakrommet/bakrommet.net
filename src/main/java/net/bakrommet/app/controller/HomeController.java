@@ -19,8 +19,7 @@ public class HomeController {
     @RequestMapping(value = "/", method = RequestMethod.GET)
     protected String index() {
         logger.info("Index page");
-        //return "comingsoon";
-        return "groups";
+        return "comingsoon";
     }
 
 }
