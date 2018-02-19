@@ -33,10 +33,6 @@ public class GroupDao {
                     getTeams(MOROCCO, PANAMA, SOUTH_KOREA, SAUDI_ARABIA)))
             .build();
 
-    public GroupDao() {
-        ALL_GROUPS.values().stream().map(Group::toString).forEach(s -> System.out.println(s));
-    }
-
     public Optional<Group> getGroup(String groupId) {
         return Optional.ofNullable(ALL_GROUPS.get(groupId));
     }
