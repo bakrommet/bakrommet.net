@@ -35,6 +35,7 @@ class TeamList extends React.Component{
             <table>
                 <tbody>
                     <tr>
+                        <th>Flag</th>
                         <th>ID</th>
                         <th>Name</th>
                     </tr>
@@ -47,8 +48,16 @@ class TeamList extends React.Component{
 
 class Team extends React.Component{
     render() {
+        var flagClass = function(team) {
+            var code = team.id.toLowerCase();
+            if (code === "eng"){
+                code = "fifa-" + code;
+            }
+            return code;
+        };
         return (
             <tr>
+                <td className={"flag flag-" + flagClass(this.props.team)}></td>
                 <td>{this.props.team.id}</td>
                 <td>{this.props.team.name}</td>
             </tr>
