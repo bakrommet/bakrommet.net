@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${pageTitle}">Bakrommet.net</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="/public/css/bootstrap-reboot.min.css" rel="stylesheet" media="screen"/>
+    <link href="/public/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
+</head>
+<body>
+    <div th:replace="fragments/header :: header">&nbsp;</div>
+    <div class="container">
+        <h1>Teams</h1>
+        <div id="react"/>
+    </div>
+
+    <script src="/public/js/bundle.js"></script>
+
+</body>
+</html>

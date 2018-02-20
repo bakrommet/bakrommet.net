@@ -1,5 +1,6 @@
 auth0.properties
 target/
+node_modules/
 !.mvn/wrapper/maven-wrapper.jar
 
 .apt_generated
@@ -13,3 +14,7 @@ target/
 *.iml
 *.ipr
 .DS_store
+
+# Built JavaScript
+src/main/resources/static/public/js/*.js
+src/main/resources/static/public/js/*.js.map
