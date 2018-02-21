@@ -21,6 +21,7 @@ public class AdminController {
 //        if (principal == null) {
 //            return "redirect:/logout";
 //        }
+        model.put("pageTitle", "Admin");
         model.put("userId", "John");//principal.getName());
         return "admin_home";
     }
